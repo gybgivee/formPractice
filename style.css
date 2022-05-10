@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Radio+Canada:wght@300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: "Radio Canada";
+}
+input, select, textarea, button{font-family:inherit;}
+header {
+  background-color: rgb(95, 84, 84);
+  color: white;
+  padding-left: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    ". inputform ."
+    ". inputform .";
+  grid-template-columns: 100px auto 100px;
+
+  width: 100vw;
+  height: 100vh;
+}
+.inputForm {
+  padding: 1rem;
+
+  grid-area: inputform;
+  justify-self: center;
+}
+.inputForm form {
+  padding: 2rem;
+
+  border: 1px solid;
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: center;
+  gap: 1rem;
+  width:fit-content;
+}
+
+h2{
+    text-align: center;
+}

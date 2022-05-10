@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Hello World</h1>
+    </header>
+    <main>
+        <section class="inputForm">
+          
+            <form>
+                <h2>Sign In</h2>
+                <label for="email">
+                    Email:
+                    <input type="email" id="email" required placeholder="example@example.com" />
+                </label>
+                <label for="password">
+                    Password:
+                    <input type="password" id="password" pattern=".{5,10}" required title="5 to 10 characters" placeholder="**********"/>
+                </label>
+                <label for="date">
+                    Date: <input type="date" required id="date" />
+                </label>
+                <label for="number">
+                    How many Cats ? <input type="number" disabled />
+                </label>
+                <label for="file">
+                    Attached Photo <input type="file" />
+                </label>
+                <label for="age-group">
+                    Age Group:
+                    0 -18 <input type="radio" name="age-group" value="0-18" required/>
+                    18-40 <input type="radio" name="age-group" value="18-40" />
+                    40+ <input type="radio" name="age-group" value="40+" />
+                </label>
+                <label for="city">
+                    City: <select name="city" id="city" required>
+                        <option value=""></option>
+                        <option value="lon">London</option>
+                        <option value="gla">Glasgow</option>
+                        <option value="car">Cardiff</option>
+                    </select>
+                </label>
+                <label for="checkbox">
+                    Terms and Conditions <input type="checkbox" required />
+                </label>
+                <input type="submit" value="Sign in" />
+
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
